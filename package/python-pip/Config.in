@@ -5,6 +5,7 @@ config BR2_PACKAGE_PYTHON_PIP
     select BR2_PACKAGE_OPENSSL_BIN
     select BR2_PACKAGE_OPENSSL_ENGINES
     select BR2_PACKAGE_GIT
+    select BR2_PACKAGE_PYTHON_SETUPTOOLS
 	help
 	  The PyPA recommended tool for installing Python packages.
 
