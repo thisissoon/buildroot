@@ -45,7 +45,7 @@ LIBPQ_CONF_OPTS += --with-openssl
 endif
 
 define LIBPQ_INSTALL_TARGET_CMDS
-	$(MAKE) -C $(STAGING_DIR)/src/interfaces/libpq install
+	$(MAKE) -C $(@D)/src/interfaces/libpq install
 endef
 
-$(eval $(generic-package))
+$(eval $(autotools-package))
