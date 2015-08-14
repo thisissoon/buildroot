@@ -46,6 +46,6 @@ endif
 
 define LIBPQ_INSTALL_TARGET_CMDS
 	$(MAKE) -C $(STAGING_DIR)/src/interfaces/libpq install
-endif
+endef
 
 $(eval $(generic-package))
