@@ -1,0 +1,11 @@
+config BR2_PACKAGE_LIBPQ
+	bool "libpq"
+	depends on BR2_USE_MMU
+	depends on !BR2_STATIC_LIBS
+	help
+	  PostgreSQL C Library
+
+	  http://www.postgresql.org/docs/9.4/static/libpq.html
+
+comment "libpq needs a toolchain w/ dynamic library"
+	depends on BR2_STATIC_LIBS
