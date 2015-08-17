@@ -563,6 +563,11 @@ config BR2_SHARED_STATIC_LIBS
 
 endchoice
 
+config BR2_TARGET_DEVFILES
+	bool "Development files in target filesystem"
+	help
+	  Install development files in the target filesystem, such as headers,
+	  static libraries, pkgconf files, etc.
 
 config BR2_PACKAGE_OVERRIDE_FILE
 	string "location of a package override file"
